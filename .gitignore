@@ -203,7 +203,6 @@ cache_dir/*
 # Evaluation Outputs
 outputs/*
 demo.ipynb
-*json
 !vlmeval/dataset/utils/vgrpbench/configs/formating-prompt/**/*.json
 .vscode
 *.swp
@@ -236,7 +235,6 @@ vlmeval/gemini_tmp.py
 run.sh
 run_g.sh
 tmp/
-InternVL*
 Qwen*
 CongRong*
 Seed1.5*
