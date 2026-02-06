@@ -751,6 +751,22 @@ thyme_series = {
 llava_series = {
     "llava_v1.5_7b": partial(LLaVA, model_path="liuhaotian/llava-v1.5-7b"),
     "llava_v1.5_13b": partial(LLaVA, model_path="liuhaotian/llava-v1.5-13b"),
+    # CDPruner variants with different token numbers
+    "llava_v1.5_7b_cdpruner": partial(
+        LLaVA_CDPruner, 
+        model_path="liuhaotian/llava-v1.5-7b",
+        visual_token_num=64
+    ),
+    "llava_v1.5_7b_cdpruner_32": partial(
+        LLaVA_CDPruner, 
+        model_path="liuhaotian/llava-v1.5-7b",
+        visual_token_num=32
+    ),
+    "llava_v1.5_7b_cdpruner_128": partial(
+        LLaVA_CDPruner, 
+        model_path="liuhaotian/llava-v1.5-7b",
+        visual_token_num=128
+    ),
     "llava_v1_7b": partial(LLaVA, model_path=LLAVA_V1_7B_MODEL_PTH),
     "sharegpt4v_7b": partial(LLaVA, model_path="Lin-Chen/ShareGPT4V-7B"),
     "sharegpt4v_13b": partial(LLaVA, model_path="Lin-Chen/ShareGPT4V-13B"),
